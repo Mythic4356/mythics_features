@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythics_features:spiritwood_sapling"
+    },
+    "title": {
+      "translate": "advancements.spirited_away.title"
+    },
+    "description": {
+      "translate": "advancements.spirited_away.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spirited_away": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "mythics_features:spiritwood_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mythics_features:welcome"
+}

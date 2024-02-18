@@ -629,6 +629,58 @@
           }
         ]
       }
+    },
+    {
+      "name": "WELCOME",
+      "type": "achievement",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welcome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/advancements/welcome.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritedAway",
+      "type": "achievement",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirited_away",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/advancements/spirited_away.json"
+        ]
+      }
+    },
+    {
+      "name": "BottledUpGoodness",
+      "type": "achievement",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_up_goodness",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/advancements/bottled_up_goodness.json"
+        ]
+      }
+    },
+    {
+      "name": "WhatIsInsideThisFruit",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "what_is_inside_this_fruit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/advancements/what_is_inside_this_fruit.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -640,6 +692,7 @@
       "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
       "block.mythics_features.vegetated_soul_soil": "Vegetated Soul Soil",
       "block.mythics_features.spiritwood_door": "Spiritwood Door",
+      "advancements.welcome.title": "Welcome to Mythic\u0027s Features",
       "block.mythics_features.spiritwood_button": "Spiritwood Button",
       "entity.mythics_features.snake": "Snake",
       "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
@@ -647,17 +700,24 @@
       "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
       "block.mythics_features.spiritwood_planks": "Spiritwood Planks",
       "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
+      "advancements.what_is_inside_this_fruit.title": "What Is Inside This Fruit Again?",
       "block.mythics_features.spiritwood_log": "Spiritwood Log",
       "item_group.mythics_features.mythics_features": "Mythic\u0027s Features",
       "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
       "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
       "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
+      "advancements.welcome.descr": "uh a mod where i add stuff which i think moyang should add cus i have a smol brain",
       "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
       "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
       "block.mythics_features.soul_berry": "Soul Berry",
+      "advancements.bottled_up_goodness.descr": "Bottle Up An Allay",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
+      "advancements.spirited_away.title": "Spirited Away",
+      "advancements.bottled_up_goodness.title": "Bottled Up Goodness",
       "entity.mythics_features.thundeer": "Thundeer",
       "block.mythics_features.spiritwood_leaves": "Spiritwood Leaves",
+      "advancements.spirited_away.descr": "Enter A Spiritwood Forest",
+      "advancements.what_is_inside_this_fruit.descr": "Obtain A Soul Berry",
       "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
       "entity.mythics_features.brine": "Brine",
       "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg"

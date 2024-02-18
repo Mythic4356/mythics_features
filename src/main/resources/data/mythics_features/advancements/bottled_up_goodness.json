@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythics_features:allay_in_a_bottle"
+    },
+    "title": {
+      "translate": "advancements.bottled_up_goodness.title"
+    },
+    "description": {
+      "translate": "advancements.bottled_up_goodness.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottled_up_goodness": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mythics_features:welcome"
+}
