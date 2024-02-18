@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.mythicsfeatures.item.AllayInABottleItem;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
 public class MythicsFeaturesModItems {
@@ -30,6 +31,7 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> SPIRITWOOD_DOOR = doubleBlock(MythicsFeaturesModBlocks.SPIRITWOOD_DOOR);
 	public static final RegistryObject<Item> SPIRITWOOD_TRAPDOOR = block(MythicsFeaturesModBlocks.SPIRITWOOD_TRAPDOOR);
 	public static final RegistryObject<Item> SPIRITWOOD_SAPLING = block(MythicsFeaturesModBlocks.SPIRITWOOD_SAPLING);
+	public static final RegistryObject<Item> ALLAY_IN_A_BOTTLE = REGISTRY.register("allay_in_a_bottle", () -> new AllayInABottleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

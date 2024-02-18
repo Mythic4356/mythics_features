@@ -358,6 +358,122 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSaplingBlock.java"
         ]
       }
+    },
+    {
+      "name": "MythicsFeatures",
+      "type": "tab",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythics_features",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AllayInABottleRightclicked",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_in_a_bottle_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayInABottleRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AllayInABottle",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_in_a_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/item/allay_in_a_bottle.json",
+          "src/main/java/net/mcreator/mythicsfeatures/item/AllayInABottleItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Allays",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allays",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/entity_types/allays.json"
+        ]
+      }
+    },
+    {
+      "name": "AllayBottling",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_bottling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayBottlingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -368,9 +484,11 @@
       "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
       "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
       "block.mythics_features.spiritwood_log": "Spiritwood Log",
+      "item_group.mythics_features.mythics_features": "Mythic\u0027s Features",
       "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
       "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
       "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
+      "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
       "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
       "entity.mythics_features.thundeer": "Thundeer",
