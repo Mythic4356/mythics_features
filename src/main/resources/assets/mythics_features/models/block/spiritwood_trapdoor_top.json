@@ -4,5 +4,5 @@
     "texture": "mythics_features:block/spiritwood_trapdoor",
     "particle": "mythics_features:block/spiritwood_trapdoor"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

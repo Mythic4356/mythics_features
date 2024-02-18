@@ -4,5 +4,5 @@
     "bottom": "mythics_features:block/spiritwood_door_bottom",
     "top": "mythics_features:block/spiritwood_door_top"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

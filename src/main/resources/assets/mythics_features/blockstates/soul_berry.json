@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "mythics_features:custom/soul_berry_particle"
+    },
+    "facing=east": {
+      "model": "mythics_features:custom/soul_berry_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mythics_features:custom/soul_berry_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mythics_features:custom/soul_berry_particle",
+      "y": 270
     }
   }
 }
