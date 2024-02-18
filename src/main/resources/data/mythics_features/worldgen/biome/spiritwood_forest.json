@@ -84,7 +84,9 @@
     ],
     [],
     [],
-    [],
+    [
+      "mythics_features:spiritwood_forest_tree"
+    ],
     [
       "minecraft:freeze_top_layer"
     ]

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "mythics_features:spiritwood_forest",
-  "features": "mythics_features:spiritwood_tree",
-  "step": "vegetal_decoration"
-}

@@ -592,24 +592,42 @@
       "registry_name": "spiritwood_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/mythics_features/worldgen/biome/spiritwood_forest.json"
+          "src/main/resources/data/mythics_features/worldgen/biome/spiritwood_forest.json",
+          "src/main/resources/data/mythics_features/worldgen/configured_feature/spiritwood_forest_tree.json",
+          "src/main/java/net/mcreator/mythicsfeatures/world/features/treedecorators/SpiritwoodForestFruitDecorator.java",
+          "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_forest_tree.json"
         ]
       }
     },
     {
-      "name": "SpiritwoodTree",
-      "type": "feature",
+      "name": "SoulBerryBlockAdded",
+      "type": "procedure",
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spiritwood_tree",
+      "registry_name": "soul_berry_block_added",
       "metadata": {
         "files": [
-          "src/main/resources/data/mythics_features/forge/biome_modifier/spiritwood_tree_biome_modifier.json",
-          "src/main/resources/data/mythics_features/worldgen/configured_feature/spiritwood_tree.json",
-          "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_tree.json"
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryBlockAddedProcedure.java"
         ],
-        "has_nbt_structure": true
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],

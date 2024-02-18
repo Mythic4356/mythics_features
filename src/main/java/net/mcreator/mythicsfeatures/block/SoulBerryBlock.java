@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TooltipFlag;
@@ -30,7 +31,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mythicsfeatures.procedures.SoulBerryUpdateTickProcedure;
+import net.mcreator.mythicsfeatures.procedures.SoulBerryBlockAddedProcedure;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -113,12 +114,18 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		SoulBerryBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		SoulBerryUpdateTickProcedure.execute(world, x, y, z);
+		SoulBerryBlockAddedProcedure.execute(world, x, y, z);
 	}
 }
