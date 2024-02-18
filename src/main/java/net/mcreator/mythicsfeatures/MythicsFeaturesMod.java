@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.mythicsfeatures.world.features.StructureFeature;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModTabs;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModItems;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModBlocks;
@@ -57,6 +58,8 @@ public class MythicsFeaturesMod {
 		MythicsFeaturesModItems.REGISTRY.register(bus);
 
 		MythicsFeaturesModTabs.REGISTRY.register(bus);
+
+		StructureFeature.REGISTRY.register(bus);
 
 	}
 
