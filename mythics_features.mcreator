@@ -342,6 +342,22 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodTrapdoorBlock.java"
         ]
       }
+    },
+    {
+      "name": "SpiritwoodSapling",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_sapling.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_sapling.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_sapling.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSaplingBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -354,6 +370,7 @@
       "block.mythics_features.spiritwood_log": "Spiritwood Log",
       "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
       "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
+      "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
       "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
       "entity.mythics_features.thundeer": "Thundeer",

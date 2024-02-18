@@ -14,6 +14,7 @@ import net.mcreator.mythicsfeatures.block.SpiritwoodWoodBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodTrapdoorBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodStairsBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodSlabBlock;
+import net.mcreator.mythicsfeatures.block.SpiritwoodSaplingBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodPressurePlateBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodPlanksBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodLogBlock;
@@ -38,4 +39,5 @@ public class MythicsFeaturesModBlocks {
 	public static final RegistryObject<Block> SPIRITWOOD_BUTTON = REGISTRY.register("spiritwood_button", () -> new SpiritwoodButtonBlock());
 	public static final RegistryObject<Block> SPIRITWOOD_DOOR = REGISTRY.register("spiritwood_door", () -> new SpiritwoodDoorBlock());
 	public static final RegistryObject<Block> SPIRITWOOD_TRAPDOOR = REGISTRY.register("spiritwood_trapdoor", () -> new SpiritwoodTrapdoorBlock());
+	public static final RegistryObject<Block> SPIRITWOOD_SAPLING = REGISTRY.register("spiritwood_sapling", () -> new SpiritwoodSaplingBlock());
 }

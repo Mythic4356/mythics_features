@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mythics_features:block/spiritwood_sapling",
+    "particle": "mythics_features:block/spiritwood_sapling"
+  },
+  "render_type": "solid"
+}

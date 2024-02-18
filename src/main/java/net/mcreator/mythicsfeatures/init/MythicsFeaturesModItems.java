@@ -29,6 +29,7 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> SPIRITWOOD_BUTTON = block(MythicsFeaturesModBlocks.SPIRITWOOD_BUTTON);
 	public static final RegistryObject<Item> SPIRITWOOD_DOOR = doubleBlock(MythicsFeaturesModBlocks.SPIRITWOOD_DOOR);
 	public static final RegistryObject<Item> SPIRITWOOD_TRAPDOOR = block(MythicsFeaturesModBlocks.SPIRITWOOD_TRAPDOOR);
+	public static final RegistryObject<Item> SPIRITWOOD_SAPLING = block(MythicsFeaturesModBlocks.SPIRITWOOD_SAPLING);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
