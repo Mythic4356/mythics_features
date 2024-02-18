@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "mythics_features:block/spritwood_planks",
+    "top": "mythics_features:block/spritwood_planks",
+    "side": "mythics_features:block/spritwood_planks"
+  },
+  "render_type": "solid"
+}

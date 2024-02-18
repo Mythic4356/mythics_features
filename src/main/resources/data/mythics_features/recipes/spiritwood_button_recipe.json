@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "mythics_features:spiritwood_planks"
+    }
+  ],
+  "result": {
+    "item": "mythics_features:spiritwood_button",
+    "count": 1
+  }
+}

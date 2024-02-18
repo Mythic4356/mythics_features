@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "mythics_features:block/spritwood_planks",
+    "particle": "mythics_features:block/spritwood_planks"
+  },
+  "render_type": "solid"
+}

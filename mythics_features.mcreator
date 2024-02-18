@@ -1,0 +1,398 @@
+{
+  "mod_elements": [
+    {
+      "name": "SpiritwoodWood",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_wood.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_wood.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodWoodBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodLog",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_log.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_log.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodLogBlock.java",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_log.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodPlanks",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_planks.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPlanksBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_planks.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodLeaves",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_leaves.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodLeavesBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_leaves.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodStairs",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_outer.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_stairs.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodStairsBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_stairs.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodSlab",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_slab.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_top.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSlabBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_slab.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_full.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodFence",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_inventory.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_fence.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_fence.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_post.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodFenceGate",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_fence_gate.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_fence_gate.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_wall_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_wall.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceGateBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_open.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodPressurePlate",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate_down.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_pressure_plate.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPressurePlateBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_pressure_plate.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodButton",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_inventory.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_button.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_pressed.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_button.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodButtonBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodPlanksLogRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_planks_log_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodPlanksWoodRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_planks_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodButtonRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodStickRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/spiritwood_stick_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodDoor",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodDoorBlock.java",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_door.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left_open.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_door.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodTrapdoor",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor_top.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_trapdoor.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor_open.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_trapdoor.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodTrapdoorBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.mythics_features.possessed_pot": "Possessed Pot",
+      "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
+      "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
+      "block.mythics_features.spiritwood_log": "Spiritwood Log",
+      "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
+      "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
+      "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
+      "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
+      "entity.mythics_features.thundeer": "Thundeer",
+      "block.mythics_features.spiritwood_door": "Spiritwood Door",
+      "block.mythics_features.spiritwood_leaves": "Spiritwood Leaves",
+      "block.mythics_features.spiritwood_button": "Spiritwood Button",
+      "entity.mythics_features.snake": "Snake",
+      "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
+      "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
+      "entity.mythics_features.brine": "Brine",
+      "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
+      "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg",
+      "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
+      "block.mythics_features.spiritwood_planks": "Spiritwood Planks"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mythics_features",
+    "modName": "Mythic\u0027s Features",
+    "version": "1.0.0",
+    "author": "SANGEETH, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mythicsfeatures",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

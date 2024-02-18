@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythics_features:block/spiritwood_slab"
+    },
+    "type=top": {
+      "model": "mythics_features:block/spiritwood_slab_top"
+    },
+    "type=double": {
+      "model": "mythics_features:block/spiritwood_slab_full"
+    }
+  }
+}

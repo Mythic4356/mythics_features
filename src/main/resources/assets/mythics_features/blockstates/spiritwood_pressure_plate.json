@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "mythics_features:block/spiritwood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "mythics_features:block/spiritwood_pressure_plate_down"
+    }
+  }
+}

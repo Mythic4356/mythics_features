@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mythics_features:item/spiritwood_door"
+  },
+  "render_type": "translucent"
+}

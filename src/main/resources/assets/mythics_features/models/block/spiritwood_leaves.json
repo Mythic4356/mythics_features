@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mythics_features:block/spiritwood_leaves",
+    "particle": "mythics_features:block/spiritwood_leaves"
+  }
+}

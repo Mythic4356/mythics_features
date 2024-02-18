@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythics_features:block/spritwood_log_top",
+    "up": "mythics_features:block/spritwood_log_top",
+    "north": "mythics_features:block/spritwood_log_side",
+    "east": "mythics_features:block/spritwood_log_side",
+    "south": "mythics_features:block/spritwood_log_side",
+    "west": "mythics_features:block/spritwood_log_side",
+    "particle": "mythics_features:block/spritwood_log_top"
+  },
+  "render_type": "solid"
+}
