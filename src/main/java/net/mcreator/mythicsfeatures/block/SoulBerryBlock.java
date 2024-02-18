@@ -78,10 +78,10 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(8, 3, 1, 12, 11, 9);
-			case NORTH -> box(4, 3, 7, 8, 11, 15);
-			case EAST -> box(1, 3, 4, 9, 11, 8);
-			case WEST -> box(7, 3, 8, 15, 11, 12);
+			default -> box(8, 3, 1, 12, 12, 9);
+			case NORTH -> box(4, 3, 7, 8, 12, 15);
+			case EAST -> box(1, 3, 4, 9, 12, 8);
+			case WEST -> box(7, 3, 8, 15, 12, 12);
 		};
 	}
 

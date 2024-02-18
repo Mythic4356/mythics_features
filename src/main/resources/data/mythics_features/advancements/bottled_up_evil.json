@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythics_features:vex_in_a_bottle"
+    },
+    "title": {
+      "translate": "advancements.bottled_up_evil.title"
+    },
+    "description": {
+      "translate": "advancements.bottled_up_evil.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottled_up_evil": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mythics_features:welcome"
+}

@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.mythicsfeatures.item.VexInABottleItem;
 import net.mcreator.mythicsfeatures.item.AllayInABottleItem;
 import net.mcreator.mythicsfeatures.block.display.SoulBerryDisplayItem;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
@@ -35,6 +36,7 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> ALLAY_IN_A_BOTTLE = REGISTRY.register("allay_in_a_bottle", () -> new AllayInABottleItem());
 	public static final RegistryObject<Item> SOUL_BERRY = REGISTRY.register(MythicsFeaturesModBlocks.SOUL_BERRY.getId().getPath(), () -> new SoulBerryDisplayItem(MythicsFeaturesModBlocks.SOUL_BERRY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> VEGETATED_SOUL_SOIL = block(MythicsFeaturesModBlocks.VEGETATED_SOUL_SOIL);
+	public static final RegistryObject<Item> VEX_IN_A_BOTTLE = REGISTRY.register("vex_in_a_bottle", () -> new VexInABottleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

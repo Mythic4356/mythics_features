@@ -681,6 +681,124 @@
           "src/main/resources/data/mythics_features/advancements/what_is_inside_this_fruit.json"
         ]
       }
+    },
+    {
+      "name": "VexInABottle",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vex_in_a_bottle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/item/VexInABottleItem.java",
+          "src/main/resources/assets/mythics_features/models/item/vex_in_a_bottle.json"
+        ]
+      }
+    },
+    {
+      "name": "VexInABottleRightClicked",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vex_in_a_bottle_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/VexInABottleRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VexBottling",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vex_bottling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/VexBottlingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vexes",
+      "type": "tag",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vexes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/vexes.json"
+        ]
+      }
+    },
+    {
+      "name": "BottledUpEvil",
+      "type": "achievement",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_up_evil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/advancements/bottled_up_evil.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -689,7 +807,9 @@
     "en_us": {
       "entity.mythics_features.possessed_pot": "Possessed Pot",
       "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
+      "advancements.bottled_up_evil.title": "Bottled Up Evil",
       "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
+      "advancements.bottled_up_evil.descr": "Bottle Up A Vex",
       "block.mythics_features.vegetated_soul_soil": "Vegetated Soul Soil",
       "block.mythics_features.spiritwood_door": "Spiritwood Door",
       "advancements.welcome.title": "Welcome to Mythic\u0027s Features",
@@ -709,6 +829,7 @@
       "advancements.welcome.descr": "uh a mod where i add stuff which i think moyang should add cus i have a smol brain",
       "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
       "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
+      "item.mythics_features.vex_in_a_bottle": "Vex In A Bottle",
       "block.mythics_features.soul_berry": "Soul Berry",
       "advancements.bottled_up_goodness.descr": "Bottle Up An Allay",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",

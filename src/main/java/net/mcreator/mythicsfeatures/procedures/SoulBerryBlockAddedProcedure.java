@@ -19,7 +19,7 @@ public class SoulBerryBlockAddedProcedure {
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == MythicsFeaturesModBlocks.SPIRITWOOD_LOG.get()) {
 			{
-				String _value = "north";
+				String _value = "south";
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
@@ -27,7 +27,7 @@ public class SoulBerryBlockAddedProcedure {
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == MythicsFeaturesModBlocks.SPIRITWOOD_LOG.get()) {
 			{
-				String _value = "south";
+				String _value = "north";
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
@@ -35,7 +35,7 @@ public class SoulBerryBlockAddedProcedure {
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == MythicsFeaturesModBlocks.SPIRITWOOD_LOG.get()) {
 			{
-				String _value = "west";
+				String _value = "east";
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
@@ -43,7 +43,7 @@ public class SoulBerryBlockAddedProcedure {
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == MythicsFeaturesModBlocks.SPIRITWOOD_LOG.get()) {
 			{
-				String _value = "east";
+				String _value = "west";
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
