@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "mythics_features:block/soul_soil",
+    "top": "mythics_features:block/vegetated_soul_soil_top",
+    "side": "mythics_features:block/vegetated_soul_soil_side",
+    "overlay": "mythics_features:block/vegetated_soul_soil_side_overlay",
+    "particle": "mythics_features:block/soul_soil"
+  },
+  "render_type": "cutout_mipped"
+}

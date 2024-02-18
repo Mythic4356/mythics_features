@@ -24,6 +24,8 @@ public class MythicsFeaturesModTabs {
 	public static final RegistryObject<CreativeModeTab> MYTHICS_FEATURES = REGISTRY.register("mythics_features",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythics_features.mythics_features")).icon(() -> new ItemStack(MythicsFeaturesModBlocks.SPIRITWOOD_SAPLING.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MythicsFeaturesModItems.ALLAY_IN_A_BOTTLE.get());
+				tabData.accept(MythicsFeaturesModBlocks.SOUL_BERRY.get().asItem());
+				tabData.accept(MythicsFeaturesModBlocks.VEGETATED_SOUL_SOIL.get().asItem());
 			})
 
 					.build());

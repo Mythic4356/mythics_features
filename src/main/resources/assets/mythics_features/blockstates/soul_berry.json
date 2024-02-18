@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mythics_features:custom/soul_berry_particle"
+    }
+  }
+}

@@ -7,9 +7,14 @@ package net.mcreator.mythicsfeatures.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.mythicsfeatures.block.VegetatedSoulSoilBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodWoodBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodTrapdoorBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodStairsBlock;
@@ -23,6 +28,7 @@ import net.mcreator.mythicsfeatures.block.SpiritwoodFenceGateBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodFenceBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodDoorBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodButtonBlock;
+import net.mcreator.mythicsfeatures.block.SoulBerryBlock;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
 public class MythicsFeaturesModBlocks {
@@ -40,4 +46,19 @@ public class MythicsFeaturesModBlocks {
 	public static final RegistryObject<Block> SPIRITWOOD_DOOR = REGISTRY.register("spiritwood_door", () -> new SpiritwoodDoorBlock());
 	public static final RegistryObject<Block> SPIRITWOOD_TRAPDOOR = REGISTRY.register("spiritwood_trapdoor", () -> new SpiritwoodTrapdoorBlock());
 	public static final RegistryObject<Block> SPIRITWOOD_SAPLING = REGISTRY.register("spiritwood_sapling", () -> new SpiritwoodSaplingBlock());
+	public static final RegistryObject<Block> SOUL_BERRY = REGISTRY.register("soul_berry", () -> new SoulBerryBlock());
+	public static final RegistryObject<Block> VEGETATED_SOUL_SOIL = REGISTRY.register("vegetated_soul_soil", () -> new VegetatedSoulSoilBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			VegetatedSoulSoilBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			VegetatedSoulSoilBlock.itemColorLoad(event);
+		}
+	}
 }

@@ -2,26 +2,25 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "spiritwood_leaves",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "soul_soil",
+    "textureTop": "vegetated_soul_soil_top",
+    "textureLeft": "vegetated_soul_soil_side_overlay",
+    "textureFront": "vegetated_soul_soil_side",
+    "textureRight": "vegetated_soul_soil_side",
+    "textureBack": "vegetated_soul_soil_side",
+    "renderType": 14,
+    "customModelName": "Grass block",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Leaves",
-    "tintType": "No tint",
-    "isItemTinted": false,
-    "hasTransparency": false,
+    "tintType": "Grass",
+    "isItemTinted": true,
+    "hasTransparency": true,
     "connectedSides": true,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,16 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Spiritwood Leaves",
+    "name": "Vegetated Soul Soil",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.2,
-    "resistance": 0.2,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:MythicsFeatures"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -55,9 +54,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 1,
+    "lightOpacity": 15,
     "material": {
-      "value": "LEAVES"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -72,7 +71,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 30,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -82,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "SOUL_SOIL"
     },
     "breakSound": {
       "value": ""
@@ -101,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -122,11 +121,7 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

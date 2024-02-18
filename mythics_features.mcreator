@@ -474,6 +474,130 @@
           }
         ]
       }
+    },
+    {
+      "name": "SoulBerryUpdateTick",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulBerry",
+      "type": "animatedblock",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/SoulBerryTileRenderer.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/entity/SoulBerryTileEntity.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/SoulBerryDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SoulBerryBlock.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryBlockModel.java",
+          "src/main/resources/assets/mythics_features/blockstates/soul_berry.json",
+          "src/main/resources/assets/mythics_features/models/item/soul_berry.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/display/SoulBerryDisplayItem.java",
+          "src/main/resources/assets/mythics_features/models/custom/soul_berry_particle.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryDisplayModel.java"
+        ]
+      }
+    },
+    {
+      "name": "VegetatedSoulSoil",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegetated_soul_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/blockstates/vegetated_soul_soil.json",
+          "src/main/resources/assets/mythics_features/models/block/vegetated_soul_soil.json",
+          "src/main/resources/assets/mythics_features/models/item/vegetated_soul_soil.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/VegetatedSoulSoilBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/logs.json"
+        ]
+      }
+    },
+    {
+      "name": "IsOverworldBiomes",
+      "type": "tag",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_overworld_biomes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/worldgen/biome/is_overworld.json"
+        ]
+      }
+    },
+    {
+      "name": "SpiritwoodForest",
+      "type": "biome",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritwood_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/worldgen/biome/spiritwood_forest.json",
+          "src/main/resources/data/mythics_features/worldgen/configured_feature/spiritwood_forest_tree.json",
+          "src/main/java/net/mcreator/mythicsfeatures/world/features/treedecorators/SpiritwoodForestFruitDecorator.java",
+          "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_forest_tree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -481,28 +605,31 @@
   "language_map": {
     "en_us": {
       "entity.mythics_features.possessed_pot": "Possessed Pot",
-      "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
       "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
+      "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
+      "block.mythics_features.vegetated_soul_soil": "Vegetated Soul Soil",
+      "block.mythics_features.spiritwood_door": "Spiritwood Door",
+      "block.mythics_features.spiritwood_button": "Spiritwood Button",
+      "entity.mythics_features.snake": "Snake",
+      "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
+      "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
+      "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
+      "block.mythics_features.spiritwood_planks": "Spiritwood Planks",
+      "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
       "block.mythics_features.spiritwood_log": "Spiritwood Log",
       "item_group.mythics_features.mythics_features": "Mythic\u0027s Features",
       "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
       "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
       "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
       "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
+      "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
+      "block.mythics_features.soul_berry": "Soul Berry",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
-      "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
       "entity.mythics_features.thundeer": "Thundeer",
-      "block.mythics_features.spiritwood_door": "Spiritwood Door",
       "block.mythics_features.spiritwood_leaves": "Spiritwood Leaves",
-      "block.mythics_features.spiritwood_button": "Spiritwood Button",
-      "entity.mythics_features.snake": "Snake",
-      "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
       "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
       "entity.mythics_features.brine": "Brine",
-      "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
-      "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg",
-      "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
-      "block.mythics_features.spiritwood_planks": "Spiritwood Planks"
+      "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg"
     }
   },
   "foldersRoot": {
