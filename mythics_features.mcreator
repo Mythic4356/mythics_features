@@ -924,10 +924,6 @@
       {
         "name": "others",
         "children": []
-      },
-      {
-        "name": "test",
-        "children": []
       }
     ]
   },
