@@ -14,7 +14,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodWoodBlock.java",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_wood.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodLog",
@@ -30,7 +31,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodLogBlock.java",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_log.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodPlanks",
@@ -46,7 +48,8 @@
           "src/main/resources/assets/mythics_features/models/item/spiritwood_planks.json",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_planks.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodLeaves",
@@ -62,7 +65,8 @@
           "src/main/resources/assets/mythics_features/models/item/spiritwood_leaves.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_leaves.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodStairs",
@@ -80,7 +84,8 @@
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_stairs.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_inner.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodSlab",
@@ -98,7 +103,8 @@
           "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_full.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_slab.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodFence",
@@ -116,7 +122,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceBlock.java",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_post.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodFenceGate",
@@ -135,7 +142,8 @@
           "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_open.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodPressurePlate",
@@ -152,7 +160,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPressurePlateBlock.java",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_pressure_plate.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodButton",
@@ -170,7 +179,8 @@
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_button.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodButtonBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodWoodRecipe",
@@ -183,7 +193,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodPlanksLogRecipe",
@@ -196,7 +207,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_planks_log_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodPlanksWoodRecipe",
@@ -209,7 +221,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_planks_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodStairsRecipe",
@@ -222,7 +235,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_stairs_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodSlabRecipe",
@@ -235,7 +249,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_slab_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodFenceRecipe",
@@ -248,7 +263,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_fence_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodFenceGateRecipe",
@@ -261,7 +277,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_fence_gate_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodPressurePlateRecipe",
@@ -274,7 +291,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_pressure_plate_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodButtonRecipe",
@@ -287,7 +305,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_button_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodStickRecipe",
@@ -300,7 +319,8 @@
         "files": [
           "src/main/resources/data/mythics_features/recipes/spiritwood_stick_recipe.json"
         ]
-      }
+      },
+      "path": "~/recipes"
     },
     {
       "name": "SpiritwoodDoor",
@@ -323,7 +343,8 @@
           "src/main/resources/assets/mythics_features/models/item/spiritwood_door.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right.json"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodTrapdoor",
@@ -341,7 +362,8 @@
           "src/main/resources/assets/mythics_features/models/item/spiritwood_trapdoor.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodTrapdoorBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "SpiritwoodSapling",
@@ -357,7 +379,8 @@
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_sapling.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSaplingBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "MythicsFeatures",
@@ -434,7 +457,8 @@
         "files": [
           "src/main/resources/data/forge/tags/entity_types/allays.json"
         ]
-      }
+      },
+      "path": "~/tags"
     },
     {
       "name": "AllayBottling",
@@ -555,7 +579,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/dirt.json"
         ]
-      }
+      },
+      "path": "~/tags"
     },
     {
       "name": "LogBlocks",
@@ -568,7 +593,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/logs.json"
         ]
-      }
+      },
+      "path": "~/tags"
     },
     {
       "name": "IsOverworldBiomes",
@@ -581,7 +607,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/worldgen/biome/is_overworld.json"
         ]
-      }
+      },
+      "path": "~/tags"
     },
     {
       "name": "SpiritwoodForest",
@@ -641,7 +668,8 @@
         "files": [
           "src/main/resources/data/mythics_features/advancements/welcome.json"
         ]
-      }
+      },
+      "path": "~/advancements"
     },
     {
       "name": "SpiritedAway",
@@ -654,7 +682,8 @@
         "files": [
           "src/main/resources/data/mythics_features/advancements/spirited_away.json"
         ]
-      }
+      },
+      "path": "~/advancements"
     },
     {
       "name": "BottledUpGoodness",
@@ -667,7 +696,8 @@
         "files": [
           "src/main/resources/data/mythics_features/advancements/bottled_up_goodness.json"
         ]
-      }
+      },
+      "path": "~/advancements"
     },
     {
       "name": "WhatIsInsideThisFruit",
@@ -680,7 +710,8 @@
         "files": [
           "src/main/resources/data/mythics_features/advancements/what_is_inside_this_fruit.json"
         ]
-      }
+      },
+      "path": "~/advancements"
     },
     {
       "name": "VexInABottle",
@@ -785,7 +816,8 @@
         "files": [
           "src/main/resources/data/forge/tags/items/vexes.json"
         ]
-      }
+      },
+      "path": "~/tags"
     },
     {
       "name": "BottledUpEvil",
@@ -798,7 +830,8 @@
         "files": [
           "src/main/resources/data/mythics_features/advancements/bottled_up_evil.json"
         ]
-      }
+      },
+      "path": "~/advancements"
     }
   ],
   "variable_elements": [],
@@ -846,7 +879,24 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "blocks",
+        "children": []
+      },
+      {
+        "name": "recipes",
+        "children": []
+      },
+      {
+        "name": "advancements",
+        "children": []
+      },
+      {
+        "name": "tags",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "mythics_features",
