@@ -844,9 +844,110 @@
         ]
       },
       "path": "~/advancements"
+    },
+    {
+      "name": "IfPlayerAte",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_player_ate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/IfPlayerAteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/produces/Sanity concern-Unused"
+    },
+    {
+      "name": "SetSanity",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sanityc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/produces/Sanity concern-Unused"
+    },
+    {
+      "name": "Sanity",
+      "type": "command",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/command/SanityCommand.java"
+        ]
+      },
+      "path": "~/produces/Sanity concern-Unused"
+    },
+    {
+      "name": "GetSanity",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_sanity",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/GetSanityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/produces/Sanity concern-Unused"
+    },
+    {
+      "name": "SanityGet",
+      "type": "command",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/command/SanityGetCommand.java"
+        ]
+      },
+      "path": "~/produces/Sanity concern-Unused"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Sanity",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -915,7 +1016,12 @@
       },
       {
         "name": "produces",
-        "children": []
+        "children": [
+          {
+            "name": "Sanity concern-Unused",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Items",
