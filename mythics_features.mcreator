@@ -626,10 +626,10 @@
       "registry_name": "spiritwood_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/mythics_features/worldgen/biome/spiritwood_forest.json",
-          "src/main/resources/data/mythics_features/worldgen/configured_feature/spiritwood_forest_tree.json",
           "src/main/java/net/mcreator/mythicsfeatures/world/features/treedecorators/SpiritwoodForestFruitDecorator.java",
-          "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_forest_tree.json"
+          "src/main/resources/data/mythics_features/worldgen/biome/spiritwood_forest.json",
+          "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_forest_tree.json",
+          "src/main/resources/data/mythics_features/worldgen/configured_feature/spiritwood_forest_tree.json"
         ]
       },
       "path": "~/others"

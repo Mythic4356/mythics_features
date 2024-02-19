@@ -51,7 +51,7 @@
     },
     "particlesProbability": 0.19999999999999998,
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.2,
     "spawnBiome": true,
     "spawnInCaves": true,
     "spawnBiomeNether": false,
