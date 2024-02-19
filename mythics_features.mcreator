@@ -430,7 +430,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "AllayInABottle",
@@ -444,7 +445,8 @@
           "src/main/resources/assets/mythics_features/models/item/allay_in_a_bottle.json",
           "src/main/java/net/mcreator/mythicsfeatures/item/AllayInABottleItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Allays",
@@ -497,7 +499,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "SoulBerryUpdateTick",
@@ -528,7 +531,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "SoulBerry",
@@ -550,7 +554,8 @@
           "src/main/resources/assets/mythics_features/models/custom/soul_berry_particle.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryDisplayModel.java"
         ]
-      }
+      },
+      "path": "~/blocks/special blocks"
     },
     {
       "name": "VegetatedSoulSoil",
@@ -566,7 +571,8 @@
           "src/main/resources/assets/mythics_features/models/item/vegetated_soul_soil.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/VegetatedSoulSoilBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "DirtBlocks",
@@ -655,7 +661,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "WELCOME",
@@ -725,7 +732,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/item/VexInABottleItem.java",
           "src/main/resources/assets/mythics_features/models/item/vex_in_a_bottle.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "VexInABottleRightClicked",
@@ -764,7 +772,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "VexBottling",
@@ -803,7 +812,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/produces"
     },
     {
       "name": "Vexes",
@@ -882,7 +892,12 @@
     "children": [
       {
         "name": "blocks",
-        "children": []
+        "children": [
+          {
+            "name": "special blocks",
+            "children": []
+          }
+        ]
       },
       {
         "name": "recipes",
@@ -894,6 +909,14 @@
       },
       {
         "name": "tags",
+        "children": []
+      },
+      {
+        "name": "produces",
+        "children": []
+      },
+      {
+        "name": "Items",
         "children": []
       }
     ]
