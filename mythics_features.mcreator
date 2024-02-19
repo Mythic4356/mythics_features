@@ -10,9 +10,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/mythics_features/models/block/spiritwood_wood.json",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_wood.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodWoodBlock.java",
-          "src/main/resources/assets/mythics_features/models/item/spiritwood_wood.json"
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_wood.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_wood.json"
         ]
       },
       "path": "~/blocks"
@@ -26,10 +26,10 @@
       "registry_name": "spiritwood_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_log.json",
-          "src/main/resources/assets/mythics_features/models/item/spiritwood_log.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_log.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodLogBlock.java",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_log.json"
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_log.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_log.json"
         ]
       },
       "path": "~/blocks"
@@ -43,10 +43,10 @@
       "registry_name": "spiritwood_planks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_planks.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPlanksBlock.java",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_planks.json",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_planks.json"
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_planks.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPlanksBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_planks.json"
         ]
       },
       "path": "~/blocks"
@@ -77,12 +77,12 @@
       "registry_name": "spiritwood_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_outer.json",
-          "src/main/resources/assets/mythics_features/models/item/spiritwood_stairs.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodStairsBlock.java",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_inner.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_stairs.json",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_stairs.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_inner.json"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_stairs_outer.json"
         ]
       },
       "path": "~/blocks"
@@ -96,12 +96,12 @@
       "registry_name": "spiritwood_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_slab.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_top.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSlabBlock.java",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_slab.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSlabBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_slab.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_top.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_slab_full.json",
-          "src/main/resources/assets/mythics_features/models/item/spiritwood_slab.json"
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_slab.json"
         ]
       },
       "path": "~/blocks"
@@ -115,12 +115,12 @@
       "registry_name": "spiritwood_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_inventory.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_fence.json",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_fence.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_post.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceBlock.java",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_post.json"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_inventory.json"
         ]
       },
       "path": "~/blocks"
@@ -134,13 +134,13 @@
       "registry_name": "spiritwood_fence_gate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_open.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_fence_gate.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceGateBlock.java",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_fence_gate.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_wall_open.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_wall.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodFenceGateBlock.java",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_open.json"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_fence_gate_wall.json"
         ]
       },
       "path": "~/blocks"
@@ -154,11 +154,11 @@
       "registry_name": "spiritwood_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate_down.json",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_pressure_plate.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodPressurePlateBlock.java",
-          "src/main/resources/assets/mythics_features/models/item/spiritwood_pressure_plate.json"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate_down.json",
+          "src/main/resources/assets/mythics_features/models/item/spiritwood_pressure_plate.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_pressure_plate.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_pressure_plate.json"
         ]
       },
       "path": "~/blocks"
@@ -172,12 +172,12 @@
       "registry_name": "spiritwood_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_inventory.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_button.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_pressed.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_button.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodButtonBlock.java",
           "src/main/resources/assets/mythics_features/blockstates/spiritwood_button.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodButtonBlock.java"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_inventory.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_button_pressed.json"
         ]
       },
       "path": "~/blocks"
@@ -331,17 +331,17 @@
       "registry_name": "spiritwood_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right_open.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodDoorBlock.java",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_door.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right_open.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left_open.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left_open.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_door.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right.json"
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodDoorBlock.java",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_right_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_top_left_open.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_right_open.json",
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_door.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_door_bottom_left_open.json"
         ]
       },
       "path": "~/blocks"
@@ -355,12 +355,12 @@
       "registry_name": "spiritwood_trapdoor",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodTrapdoorBlock.java",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor_top.json",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_trapdoor.json",
-          "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor_open.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_trapdoor.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodTrapdoorBlock.java"
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_trapdoor.json",
+          "src/main/resources/assets/mythics_features/models/block/spiritwood_trapdoor.json"
         ]
       },
       "path": "~/blocks"
@@ -374,9 +374,9 @@
       "registry_name": "spiritwood_sapling",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mythics_features/blockstates/spiritwood_sapling.json",
           "src/main/resources/assets/mythics_features/models/item/spiritwood_sapling.json",
           "src/main/resources/assets/mythics_features/models/block/spiritwood_sapling.json",
-          "src/main/resources/assets/mythics_features/blockstates/spiritwood_sapling.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SpiritwoodSaplingBlock.java"
         ]
       },
@@ -544,16 +544,16 @@
       "registry_name": "soul_berry",
       "metadata": {
         "files": [
+          "src/main/resources/assets/mythics_features/blockstates/soul_berry.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/renderer/SoulBerryTileRenderer.java",
-          "src/main/java/net/mcreator/mythicsfeatures/block/entity/SoulBerryTileEntity.java",
-          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/SoulBerryDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/display/SoulBerryDisplayItem.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryDisplayModel.java",
+          "src/main/resources/assets/mythics_features/models/item/soul_berry.json",
+          "src/main/resources/assets/mythics_features/models/custom/soul_berry_particle.json",
           "src/main/java/net/mcreator/mythicsfeatures/block/SoulBerryBlock.java",
           "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryBlockModel.java",
-          "src/main/resources/assets/mythics_features/blockstates/soul_berry.json",
-          "src/main/resources/assets/mythics_features/models/item/soul_berry.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/display/SoulBerryDisplayItem.java",
-          "src/main/resources/assets/mythics_features/models/custom/soul_berry_particle.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/model/SoulBerryDisplayModel.java"
+          "src/main/java/net/mcreator/mythicsfeatures/block/entity/SoulBerryTileEntity.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/SoulBerryDisplayItemRenderer.java"
         ]
       },
       "path": "~/blocks/special blocks"
@@ -567,10 +567,10 @@
       "registry_name": "vegetated_soul_soil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mythics_features/blockstates/vegetated_soul_soil.json",
           "src/main/resources/assets/mythics_features/models/block/vegetated_soul_soil.json",
-          "src/main/resources/assets/mythics_features/models/item/vegetated_soul_soil.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/VegetatedSoulSoilBlock.java"
+          "src/main/resources/assets/mythics_features/blockstates/vegetated_soul_soil.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/VegetatedSoulSoilBlock.java",
+          "src/main/resources/assets/mythics_features/models/item/vegetated_soul_soil.json"
         ]
       },
       "path": "~/blocks"
@@ -731,8 +731,8 @@
       "registry_name": "vex_in_a_bottle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/item/VexInABottleItem.java",
-          "src/main/resources/assets/mythics_features/models/item/vex_in_a_bottle.json"
+          "src/main/resources/assets/mythics_features/models/item/vex_in_a_bottle.json",
+          "src/main/java/net/mcreator/mythicsfeatures/item/VexInABottleItem.java"
         ]
       },
       "path": "~/Items"
@@ -923,6 +923,10 @@
       },
       {
         "name": "others",
+        "children": []
+      },
+      {
+        "name": "test",
         "children": []
       }
     ]
