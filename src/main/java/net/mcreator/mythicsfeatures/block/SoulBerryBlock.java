@@ -44,7 +44,8 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public SoulBerryBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).strength(0.1f, 10f).lightLevel(s -> 5).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).strength(0.1f, 10f).lightLevel(s -> 5).noOcclusion().randomTicks().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -78,10 +79,10 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(8, 3, 1, 12, 12, 9);
-			case NORTH -> box(4, 3, 7, 8, 12, 15);
-			case EAST -> box(1, 3, 4, 9, 12, 8);
-			case WEST -> box(7, 3, 8, 15, 12, 12);
+			default -> box(8, 3, 1, 9, 12, 9);
+			case NORTH -> box(7, 3, 7, 8, 12, 15);
+			case EAST -> box(1, 3, 7, 9, 12, 8);
+			case WEST -> box(7, 3, 8, 15, 12, 9);
 		};
 	}
 
@@ -103,6 +104,11 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 5;
 	}
 
 	@Override
