@@ -391,7 +391,8 @@
       "registry_name": "mythics_features",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/others"
     },
     {
       "name": "AllayInABottleRightclicked",
@@ -630,7 +631,8 @@
           "src/main/java/net/mcreator/mythicsfeatures/world/features/treedecorators/SpiritwoodForestFruitDecorator.java",
           "src/main/resources/data/mythics_features/worldgen/placed_feature/spiritwood_forest_tree.json"
         ]
-      }
+      },
+      "path": "~/others"
     },
     {
       "name": "SoulBerryBlockAdded",
@@ -917,6 +919,10 @@
       },
       {
         "name": "Items",
+        "children": []
+      },
+      {
+        "name": "others",
         "children": []
       }
     ]
