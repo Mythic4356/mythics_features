@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mythics_features:item/soul_berry"
-  }
+    "layer0": "mythics_features:item/soul_berries"
+  },
+  "render_type": "translucent"
 }

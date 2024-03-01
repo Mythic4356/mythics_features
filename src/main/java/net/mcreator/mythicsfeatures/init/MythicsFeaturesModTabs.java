@@ -24,9 +24,10 @@ public class MythicsFeaturesModTabs {
 	public static final RegistryObject<CreativeModeTab> MYTHICS_FEATURES = REGISTRY.register("mythics_features",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythics_features.mythics_features")).icon(() -> new ItemStack(MythicsFeaturesModBlocks.SPIRITWOOD_SAPLING.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MythicsFeaturesModItems.ALLAY_IN_A_BOTTLE.get());
-				tabData.accept(MythicsFeaturesModBlocks.SOUL_BERRY.get().asItem());
 				tabData.accept(MythicsFeaturesModBlocks.VEGETATED_SOUL_SOIL.get().asItem());
 				tabData.accept(MythicsFeaturesModItems.VEX_IN_A_BOTTLE.get());
+				tabData.accept(MythicsFeaturesModBlocks.SOUL_BERRY.get().asItem());
+				tabData.accept(MythicsFeaturesModItems.FOOD_TEST.get());
 			})
 
 					.build());
@@ -44,6 +45,8 @@ public class MythicsFeaturesModTabs {
 			tabData.accept(MythicsFeaturesModBlocks.SPIRITWOOD_FENCE_GATE.get().asItem());
 			tabData.accept(MythicsFeaturesModBlocks.SPIRITWOOD_PRESSURE_PLATE.get().asItem());
 			tabData.accept(MythicsFeaturesModBlocks.SPIRITWOOD_BUTTON.get().asItem());
+			tabData.accept(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_LOG.get().asItem());
+			tabData.accept(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_WOOD.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

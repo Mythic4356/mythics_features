@@ -4,60 +4,34 @@ package net.mcreator.mythicsfeatures.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.RenderShape;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.mythicsfeatures.procedures.SoulBerryBlockAddedProcedure;
-import net.mcreator.mythicsfeatures.init.MythicsFeaturesModBlockEntities;
-
-import javax.annotation.Nullable;
 
 import java.util.List;
 import java.util.Collections;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
-	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
+
+public class SoulBerryBlock extends Block {
+
+	public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 3);
+
+	
 	public SoulBerryBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).strength(0.1f, 10f).lightLevel(s -> 5).noOcclusion().randomTicks().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(1f, 10f).lightLevel(s -> 4).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
 				.isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public RenderShape getRenderShape(BlockState state) {
-		return RenderShape.ENTITYBLOCK_ANIMATED;
-	}
-
-	@Nullable
-	@Override
-	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-		return MythicsFeaturesModBlockEntities.SOUL_BERRY.get().create(blockPos, blockState);
+		this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
 	}
 
 	@Override
@@ -76,39 +50,8 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-
-		return switch (state.getValue(FACING)) {
-			default -> box(8, 3, 1, 9, 12, 9);
-			case NORTH -> box(7, 3, 7, 8, 12, 15);
-			case EAST -> box(1, 3, 7, 9, 12, 8);
-			case WEST -> box(7, 3, 8, 15, 12, 9);
-		};
-	}
-
-	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(ANIMATION, FACING);
-	}
-
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH);
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
-	}
-
-	public BlockState rotate(BlockState state, Rotation rot) {
-		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
-	}
-
-	public BlockState mirror(BlockState state, Mirror mirrorIn) {
-		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-		return 5;
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -118,20 +61,17 @@ public class SoulBerryBlock extends BaseEntityBlock implements EntityBlock {
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
+}
 
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		SoulBerryBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+
+public class SoulBerryBlock extends Item {
+	public FoodTestItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.6f).build()));
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-
-		SoulBerryBlockAddedProcedure.execute(world, x, y, z);
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 }
+

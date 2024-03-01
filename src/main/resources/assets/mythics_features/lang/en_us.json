@@ -17,6 +17,7 @@
   "advancements.what_is_inside_this_fruit.title": "What Is Inside This Fruit Again?",
   "block.mythics_features.spiritwood_log": "Spiritwood Log",
   "item_group.mythics_features.mythics_features": "Mythic\u0027s Features",
+  "block.mythics_features.stripped_spiritwood_wood": "Spiritwood Wood",
   "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
   "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
   "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
@@ -24,8 +25,8 @@
   "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
   "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
   "item.mythics_features.vex_in_a_bottle": "Vex In A Bottle",
-  "block.mythics_features.soul_berry": "Soul Berry",
   "advancements.bottled_up_goodness.descr": "Bottle Up An Allay",
+  "block.mythics_features.soul_berry": "Soul Berry",
   "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
   "advancements.spirited_away.title": "Spirited Away",
   "advancements.bottled_up_goodness.title": "Bottled Up Goodness",
@@ -33,7 +34,9 @@
   "block.mythics_features.spiritwood_leaves": "Spiritwood Leaves",
   "advancements.spirited_away.descr": "Enter A Spiritwood Forest",
   "advancements.what_is_inside_this_fruit.descr": "Obtain A Soul Berry",
+  "block.mythics_features.stripped_spiritwood_log": "Spiritwood Log",
   "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
+  "item.mythics_features.food_test": "Food Test",
   "entity.mythics_features.brine": "Brine",
   "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg"
 }

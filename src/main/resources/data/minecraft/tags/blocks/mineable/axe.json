@@ -3,6 +3,8 @@
   "values": [
     "mythics_features:spiritwood_log",
     "mythics_features:spiritwood_wood",
-    "mythics_features:spiritwood_planks"
+    "mythics_features:spiritwood_planks",
+    "mythics_features:stripped_spiritwood_log",
+    "mythics_features:stripped_spiritwood_wood"
   ]
 }

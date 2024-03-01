@@ -47,10 +47,6 @@
       "offset": 0,
       "height": 2
     },
-    "decorators": [
-      {
-        "type": "mythics_features:spiritwood_forest_tree_fruit_decorator"
-      }
-    ]
+    "decorators": []
   }
 }

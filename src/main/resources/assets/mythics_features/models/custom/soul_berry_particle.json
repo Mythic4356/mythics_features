@@ -1,7 +1,0 @@
-
-{
-  "parent": "mythics_features:displaysettings/soulberry.item",
-  "textures": {
-    "particle": "mythics_features:block/soul_berry_e"
-  }
-}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mythics_features:block/stripped_spiritwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mythics_features:block/stripped_spiritwood_log"
+    },
+    "axis=z": {
+      "model": "mythics_features:block/stripped_spiritwood_log",
+      "x": 90
+    }
+  }
+}
