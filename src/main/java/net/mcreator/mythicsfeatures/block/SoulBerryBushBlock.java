@@ -79,7 +79,8 @@ public class SoulBerryBushBlock extends Block implements BonemealableBlock {
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		return this.defaultBlockState().setValue(AGE, 0);
 	}
-
+
+
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
@@ -88,7 +89,8 @@ public class SoulBerryBushBlock extends Block implements BonemealableBlock {
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(MythicsFeaturesModItems.SOUL_BERRY.get()));
 	}
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -109,7 +111,8 @@ public class SoulBerryBushBlock extends Block implements BonemealableBlock {
 		SoulBerryBushOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate);
 		return InteractionResult.SUCCESS;
 	}
-	
+
+	
 	@Override
 	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
 		return true;

@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MythicsFeatures"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {

@@ -1008,7 +1008,7 @@
       "type": "block",
       "sortid": 56,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "soul_berry_bush",
       "metadata": {
         "files": [

@@ -27,7 +27,6 @@ public class MythicsFeaturesModTabs {
 				tabData.accept(MythicsFeaturesModBlocks.VEGETATED_SOUL_SOIL.get().asItem());
 				tabData.accept(MythicsFeaturesModItems.VEX_IN_A_BOTTLE.get());
 				tabData.accept(MythicsFeaturesModItems.SOUL_BERRY.get());
-				tabData.accept(MythicsFeaturesModBlocks.SOUL_BERRY_BUSH.get().asItem());
 			})
 
 					.build());
