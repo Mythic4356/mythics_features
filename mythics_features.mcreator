@@ -1187,23 +1187,6 @@
         ]
       },
       "path": "~/blocks/special blocks"
-    },
-    {
-      "name": "Test",
-      "type": "block",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mythics_features/blockstates/test.json",
-          "src/main/resources/assets/mythics_features/models/block/test.json",
-          "src/main/resources/assets/mythics_features/models/item/test.json",
-          "src/main/java/net/mcreator/mythicsfeatures/block/TestBlock.java"
-        ]
-      },
-      "path": "~/blocks/special blocks"
     }
   ],
   "variable_elements": [
@@ -1230,7 +1213,6 @@
       "entity.mythics_features.snake": "Snake",
       "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
       "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
-      "block.mythics_features.test": "Soul Berry Bush",
       "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
       "block.mythics_features.spiritwood_planks": "Spiritwood Planks",
       "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",

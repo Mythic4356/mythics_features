@@ -4,13 +4,13 @@
       "model": "mythics_features:block/soul_berry_bush_0"
     },
     "age=1": {
-      "model": "mythics_features:block/soul_berry_bush_1",
+      "model": "mythics_features:block/soul_berry_bush_1"
     },
     "age=2": {
-      "model": "mythics_features:block/soul_berry_bush_2",
+      "model": "mythics_features:block/soul_berry_bush_2"
     },
     "age=3": {
-      "model": "mythics_features:block/soul_berry_bush_3",
+      "model": "mythics_features:block/soul_berry_bush_3"
     }
   }
 }

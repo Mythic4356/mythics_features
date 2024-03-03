@@ -40,7 +40,6 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> STRIPPED_SPIRITWOOD_WOOD = block(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_WOOD);
 	public static final RegistryObject<Item> SOUL_BERRY = REGISTRY.register("soul_berry", () -> new SoulBerryItem());
 	public static final RegistryObject<Item> SOUL_BERRY_BUSH = block(MythicsFeaturesModBlocks.SOUL_BERRY_BUSH);
-	public static final RegistryObject<Item> TEST = block(MythicsFeaturesModBlocks.TEST);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

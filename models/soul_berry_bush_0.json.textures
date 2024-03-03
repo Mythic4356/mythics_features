@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "missing": "soul_berry_bush_stage0"
+        "2": "soul_berry_bush_stage0"
       },
       "name": "default"
     }
