@@ -990,32 +990,217 @@
     },
     {
       "name": "SoulBerry",
-      "type": "block",
+      "type": "item",
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_berry",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/block/SoulBerryBlock.java",
-          "src/main/resources/assets/mythics_features/models/item/soul_berry.json",
-          "src/main/resources/assets/mythics_features/blockstates/soul_berry.json",
-          "src/main/resources/assets/mythics_features/models/block/soul_berry.json"
+          "src/main/java/net/mcreator/mythicsfeatures/item/SoulBerryItem.java",
+          "src/main/resources/assets/mythics_features/models/item/soul_berry.json"
         ]
       },
       "path": "~/blocks/special blocks"
     },
     {
-      "name": "FoodTest",
-      "type": "item",
+      "name": "SoulBerryBush",
+      "type": "block",
       "sortid": 56,
       "compiles": true,
-      "locked_code": false,
-      "registry_name": "food_test",
+      "locked_code": true,
+      "registry_name": "soul_berry_bush",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/item/FoodTestItem.java",
-          "src/main/resources/assets/mythics_features/models/item/food_test.json"
+          "src/main/resources/assets/mythics_features/models/item/soul_berry_bush.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/SoulBerryBushBlock.java",
+          "src/main/resources/assets/mythics_features/blockstates/soul_berry_bush.json",
+          "src/main/resources/assets/mythics_features/models/block/soul_berry_bush.json"
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "SoulBerryItemReplace",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_item_replace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryItemReplaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "SoulBerryRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "SoulBerryBushOnBoneMealSuccess",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_bush_on_bone_meal_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryBushOnBoneMealSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "SoulBerryBushOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_bush_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryBushOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "SoulBerryBushUpdateTick",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry_bush_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/SoulBerryBushUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "Test",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/blockstates/test.json",
+          "src/main/resources/assets/mythics_features/models/block/test.json",
+          "src/main/resources/assets/mythics_features/models/item/test.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/TestBlock.java"
         ]
       },
       "path": "~/blocks/special blocks"
@@ -1035,6 +1220,7 @@
       "entity.mythics_features.possessed_pot": "Possessed Pot",
       "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
       "advancements.bottled_up_evil.title": "Bottled Up Evil",
+      "item.mythics_features.soul_berry": "Soul Berry",
       "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
       "advancements.bottled_up_evil.descr": "Bottle Up A Vex",
       "block.mythics_features.vegetated_soul_soil": "Vegetated Soul Soil",
@@ -1044,6 +1230,7 @@
       "entity.mythics_features.snake": "Snake",
       "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
       "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
+      "block.mythics_features.test": "Soul Berry Bush",
       "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
       "block.mythics_features.spiritwood_planks": "Spiritwood Planks",
       "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
@@ -1059,7 +1246,6 @@
       "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
       "item.mythics_features.vex_in_a_bottle": "Vex In A Bottle",
       "advancements.bottled_up_goodness.descr": "Bottle Up An Allay",
-      "block.mythics_features.soul_berry": "Soul Berry",
       "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
       "advancements.spirited_away.title": "Spirited Away",
       "advancements.bottled_up_goodness.title": "Bottled Up Goodness",
@@ -1069,8 +1255,8 @@
       "advancements.what_is_inside_this_fruit.descr": "Obtain A Soul Berry",
       "block.mythics_features.stripped_spiritwood_log": "Spiritwood Log",
       "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
-      "item.mythics_features.food_test": "Food Test",
       "entity.mythics_features.brine": "Brine",
+      "block.mythics_features.soul_berry_bush": "Soul Berry Bush",
       "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg"
     }
   },

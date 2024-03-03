@@ -14,7 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.mythicsfeatures.item.VexInABottleItem;
-import net.mcreator.mythicsfeatures.item.FoodTestItem;
+import net.mcreator.mythicsfeatures.item.SoulBerryItem;
 import net.mcreator.mythicsfeatures.item.AllayInABottleItem;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
@@ -38,8 +38,9 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> VEX_IN_A_BOTTLE = REGISTRY.register("vex_in_a_bottle", () -> new VexInABottleItem());
 	public static final RegistryObject<Item> STRIPPED_SPIRITWOOD_LOG = block(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_LOG);
 	public static final RegistryObject<Item> STRIPPED_SPIRITWOOD_WOOD = block(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_WOOD);
-	public static final RegistryObject<Item> SOUL_BERRY = block(MythicsFeaturesModBlocks.SOUL_BERRY);
-	public static final RegistryObject<Item> FOOD_TEST = REGISTRY.register("food_test", () -> new FoodTestItem());
+	public static final RegistryObject<Item> SOUL_BERRY = REGISTRY.register("soul_berry", () -> new SoulBerryItem());
+	public static final RegistryObject<Item> SOUL_BERRY_BUSH = block(MythicsFeaturesModBlocks.SOUL_BERRY_BUSH);
+	public static final RegistryObject<Item> TEST = block(MythicsFeaturesModBlocks.TEST);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

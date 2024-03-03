@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mythics_features:block/test"
+    },
+    "facing=east": {
+      "model": "mythics_features:block/test",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mythics_features:block/test",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mythics_features:block/test",
+      "y": 270
+    }
+  }
+}

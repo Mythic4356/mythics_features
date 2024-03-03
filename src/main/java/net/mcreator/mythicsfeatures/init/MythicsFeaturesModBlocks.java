@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.mythicsfeatures.block.VegetatedSoulSoilBlock;
+import net.mcreator.mythicsfeatures.block.TestBlock;
 import net.mcreator.mythicsfeatures.block.StrippedSpiritwoodWoodBlock;
 import net.mcreator.mythicsfeatures.block.StrippedSpiritwoodLogBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodWoodBlock;
@@ -30,7 +31,7 @@ import net.mcreator.mythicsfeatures.block.SpiritwoodFenceGateBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodFenceBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodDoorBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodButtonBlock;
-import net.mcreator.mythicsfeatures.block.SoulBerryBlock;
+import net.mcreator.mythicsfeatures.block.SoulBerryBushBlock;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
 public class MythicsFeaturesModBlocks {
@@ -51,7 +52,8 @@ public class MythicsFeaturesModBlocks {
 	public static final RegistryObject<Block> VEGETATED_SOUL_SOIL = REGISTRY.register("vegetated_soul_soil", () -> new VegetatedSoulSoilBlock());
 	public static final RegistryObject<Block> STRIPPED_SPIRITWOOD_LOG = REGISTRY.register("stripped_spiritwood_log", () -> new StrippedSpiritwoodLogBlock());
 	public static final RegistryObject<Block> STRIPPED_SPIRITWOOD_WOOD = REGISTRY.register("stripped_spiritwood_wood", () -> new StrippedSpiritwoodWoodBlock());
-	public static final RegistryObject<Block> SOUL_BERRY = REGISTRY.register("soul_berry", () -> new SoulBerryBlock());
+	public static final RegistryObject<Block> SOUL_BERRY_BUSH = REGISTRY.register("soul_berry_bush", () -> new SoulBerryBushBlock());
+	public static final RegistryObject<Block> TEST = REGISTRY.register("test", () -> new TestBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

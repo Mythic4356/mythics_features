@@ -11,9 +11,19 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class FoodTestItem extends Item {
-	public FoodTestItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.6f).build()));
+public class SoulBerryItem extends Item {
+	public SoulBerryItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.5f).build()));
+	}
+
+	@Override
+	public boolean hasCraftingRemainingItem() {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(this);
 	}
 
 	@Override
