@@ -1187,6 +1187,38 @@
         ]
       },
       "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "VegetatedSoulSoilBlockAdded",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegetated_soul_soil_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/VegetatedSoulSoilBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks"
     }
   ],
   "variable_elements": [
