@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RedStamp"
+      },
+      {
+        "value": "CUSTOM:OrangeStamp"
+      },
+      {
+        "value": "CUSTOM:YellowStamp"
+      },
+      {
+        "value": "CUSTOM:LimeStamp"
+      },
+      {
+        "value": "CUSTOM:GreenStamp"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "stamps",
+    "namespace": "mod"
+  }
+}

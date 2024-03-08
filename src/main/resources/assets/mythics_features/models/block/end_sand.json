@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythics_features:block/end_sand",
+    "up": "mythics_features:block/end_sand",
+    "north": "mythics_features:block/end_sand",
+    "east": "mythics_features:block/end_sand",
+    "south": "mythics_features:block/end_sand",
+    "west": "mythics_features:block/end_sand",
+    "particle": "mythics_features:block/end_sand"
+  },
+  "render_type": "solid"
+}

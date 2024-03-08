@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "mythics_features:allay_in_a_bottle"
+    },
+    "c": {
+      "tag": "minecraft:wooden_fence"
+    }
+  },
+  "result": {
+    "item": "mythics_features:allay_mailbox",
+    "count": 1
+  }
+}

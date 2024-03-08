@@ -1,7 +1,22 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mythics_features:item/soul_berries"
-  },
-  "render_type": "translucent"
+  "parent": "mythics_features:block/soul_berry_bush",
+  "display": {
+    "thirdperson": {
+      "rotation": [
+        10,
+        -45,
+        170
+      ],
+      "translation": [
+        0,
+        1.5,
+        -2.75
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  }
 }

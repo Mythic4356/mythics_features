@@ -30,8 +30,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModTabs;
+import net.mcreator.mythicsfeatures.init.MythicsFeaturesModMenus;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModItems;
 import net.mcreator.mythicsfeatures.init.MythicsFeaturesModBlocks;
+import net.mcreator.mythicsfeatures.init.MythicsFeaturesModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,11 +54,12 @@ public class MythicsFeaturesMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MythicsFeaturesModBlocks.REGISTRY.register(bus);
-
+		MythicsFeaturesModBlockEntities.REGISTRY.register(bus);
 		MythicsFeaturesModItems.REGISTRY.register(bus);
 
 		MythicsFeaturesModTabs.REGISTRY.register(bus);
 
+		MythicsFeaturesModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

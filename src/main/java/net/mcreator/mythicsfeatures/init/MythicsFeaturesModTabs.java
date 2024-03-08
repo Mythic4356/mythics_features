@@ -27,6 +27,13 @@ public class MythicsFeaturesModTabs {
 				tabData.accept(MythicsFeaturesModBlocks.VEGETATED_SOUL_SOIL.get().asItem());
 				tabData.accept(MythicsFeaturesModItems.VEX_IN_A_BOTTLE.get());
 				tabData.accept(MythicsFeaturesModItems.SOUL_BERRY.get());
+				tabData.accept(MythicsFeaturesModBlocks.END_SAND.get().asItem());
+				tabData.accept(MythicsFeaturesModBlocks.ALLAY_MAILBOX.get().asItem());
+				tabData.accept(MythicsFeaturesModItems.RED_STAMP.get());
+				tabData.accept(MythicsFeaturesModItems.ORANGE_STAMP.get());
+				tabData.accept(MythicsFeaturesModItems.YELLOW_STAMP.get());
+				tabData.accept(MythicsFeaturesModItems.LIME_STAMP.get());
+				tabData.accept(MythicsFeaturesModItems.GREEN_STAMP.get());
 			})
 
 					.build());

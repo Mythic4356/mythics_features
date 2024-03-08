@@ -1,9 +1,9 @@
 {
-  "parent": "mythics_features:custom/soul_berry_bush_3",
+  "parent": "block/cross",
   "textures": {
     "all": "mythics_features:block/soul_berry_bush_stage3",
     "particle": "mythics_features:block/soul_berry_bush_stage3",
     "6": "mythics_features:block/soul_berry_bush_stage3"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

@@ -22,7 +22,14 @@ public class SoulBerryBushOnBlockRightClickedProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if ((blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip5 ? blockstate.getValue(_getip5) : -1) == 2) {
+			{
+				int _value = 1;
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+		} else if ((blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip6 ? blockstate.getValue(_getip6) : -1) == 2) {
 			for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 1, 2); index1++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MythicsFeaturesModItems.SOUL_BERRY.get()));
@@ -30,13 +37,13 @@ public class SoulBerryBushOnBlockRightClickedProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		}
-		{
-			int _value = 1;
-			BlockPos _pos = BlockPos.containing(x, y, z);
-			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-				world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			{
+				int _value = 1;
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
 		}
 	}
 }

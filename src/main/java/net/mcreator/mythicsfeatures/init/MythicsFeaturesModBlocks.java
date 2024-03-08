@@ -31,6 +31,8 @@ import net.mcreator.mythicsfeatures.block.SpiritwoodFenceBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodDoorBlock;
 import net.mcreator.mythicsfeatures.block.SpiritwoodButtonBlock;
 import net.mcreator.mythicsfeatures.block.SoulBerryBushBlock;
+import net.mcreator.mythicsfeatures.block.EndSandBlock;
+import net.mcreator.mythicsfeatures.block.AllayMailboxBlock;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
 public class MythicsFeaturesModBlocks {
@@ -52,6 +54,8 @@ public class MythicsFeaturesModBlocks {
 	public static final RegistryObject<Block> STRIPPED_SPIRITWOOD_LOG = REGISTRY.register("stripped_spiritwood_log", () -> new StrippedSpiritwoodLogBlock());
 	public static final RegistryObject<Block> STRIPPED_SPIRITWOOD_WOOD = REGISTRY.register("stripped_spiritwood_wood", () -> new StrippedSpiritwoodWoodBlock());
 	public static final RegistryObject<Block> SOUL_BERRY_BUSH = REGISTRY.register("soul_berry_bush", () -> new SoulBerryBushBlock());
+	public static final RegistryObject<Block> END_SAND = REGISTRY.register("end_sand", () -> new EndSandBlock());
+	public static final RegistryObject<Block> ALLAY_MAILBOX = REGISTRY.register("allay_mailbox", () -> new AllayMailboxBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

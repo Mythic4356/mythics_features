@@ -790,103 +790,6 @@
       "path": "~/advancements"
     },
     {
-      "name": "IfPlayerAte",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "if_player_ate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/procedures/IfPlayerAteProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/produces/Sanity concern-Unused"
-    },
-    {
-      "name": "SetSanity",
-      "type": "procedure",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_sanityc",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/procedures/SetSanityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/produces/Sanity concern-Unused"
-    },
-    {
-      "name": "Sanity",
-      "type": "command",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sanity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/command/SanityCommand.java"
-        ]
-      },
-      "path": "~/produces/Sanity concern-Unused"
-    },
-    {
-      "name": "GetSanity",
-      "type": "procedure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_sanity",
-      "metadata": {
-        "return_type": "number",
-        "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/procedures/GetSanityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/produces/Sanity concern-Unused"
-    },
-    {
-      "name": "SanityGet",
-      "type": "command",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sanity_get",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicsfeatures/command/SanityGetCommand.java"
-        ]
-      },
-      "path": "~/produces/Sanity concern-Unused"
-    },
-    {
       "name": "SoulBerryPlaced",
       "type": "procedure",
       "sortid": 51,
@@ -1008,7 +911,7 @@
       "type": "block",
       "sortid": 56,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "soul_berry_bush",
       "metadata": {
         "files": [
@@ -1219,58 +1122,552 @@
         ]
       },
       "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "EndSand",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/blockstates/end_sand.json",
+          "src/main/resources/assets/mythics_features/models/block/end_sand.json",
+          "src/main/resources/assets/mythics_features/models/item/end_sand.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/EndSandBlock.java"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "AllayMailboxGUI",
+      "type": "gui",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/client/gui/AllayMailboxGUIScreen.java",
+          "src/main/java/net/mcreator/mythicsfeatures/world/inventory/AllayMailboxGUIMenu.java",
+          "src/main/java/net/mcreator/mythicsfeatures/network/AllayMailboxGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailbox",
+      "type": "animatedblock",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/AllayMailboxTileRenderer.java",
+          "src/main/resources/assets/mythics_features/blockstates/allay_mailbox.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/model/AllayMailboxDisplayModel.java",
+          "src/main/resources/assets/mythics_features/models/item/allay_mailbox.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/model/AllayMailboxBlockModel.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/renderer/AllayMailboxDisplayItemRenderer.java",
+          "src/main/resources/assets/mythics_features/models/custom/allay_mailbox_particle.json",
+          "src/main/java/net/mcreator/mythicsfeatures/block/entity/AllayMailboxTileEntity.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/AllayMailboxBlock.java",
+          "src/main/java/net/mcreator/mythicsfeatures/block/display/AllayMailboxDisplayItem.java"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailBoxCondition",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mail_box_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailBoxConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "RedStamp",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_stamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/item/RedStampItem.java",
+          "src/main/resources/assets/mythics_features/models/item/red_stamp.json"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "OrangeStamp",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_stamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythics_features/models/item/orange_stamp.json",
+          "src/main/java/net/mcreator/mythicsfeatures/item/OrangeStampItem.java"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "YellowStamp",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_stamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/item/YellowStampItem.java",
+          "src/main/resources/assets/mythics_features/models/item/yellow_stamp.json"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "LimeStamp",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lime_stamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/item/LimeStampItem.java",
+          "src/main/resources/assets/mythics_features/models/item/lime_stamp.json"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "GreenStamp",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_stamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/item/GreenStampItem.java",
+          "src/main/resources/assets/mythics_features/models/item/green_stamp.json"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "Stamps",
+      "type": "tag",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamps",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/tags/items/stamps.json"
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailboxSend",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_send",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxSendProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailboxRecieve",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_recieve",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxRecieveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailboxOpen",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailboxClose",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "ALLAYEXPRESSGETPROCEDURE",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allayexpressgetprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/ALLAYEXPRESSGETPROCEDUREProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "ALLAYEXPRESSSETPROCEDURE",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allayexpresssetprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/ALLAYEXPRESSSETPROCEDUREProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "AllayMailboxRedstoneValue",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_redstone_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxRedstoneValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
+    },
+    {
+      "name": "WoodenFenceBlocks",
+      "type": "tag",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_fence_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/wooden_fences.json"
+        ]
+      },
+      "path": "~/others"
+    },
+    {
+      "name": "AllayexpressRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allayexpress_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythics_features/recipes/allayexpress_recipe.json"
+        ]
+      },
+      "path": "~/blocks/special blocks"
+    },
+    {
+      "name": "AllayMailboxBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allay_mailbox_block_is_placed_by",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicsfeatures/procedures/AllayMailboxBlockIsPlacedByProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks/special blocks/AllayMailbox"
     }
   ],
   "variable_elements": [
     {
-      "name": "Sanity",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "100.0"
+      "name": "red",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "orange",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "yellow",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "lime",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "green",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "entity.mythics_features.possessed_pot": "Possessed Pot",
-      "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
-      "advancements.bottled_up_evil.title": "Bottled Up Evil",
+      "gui.mythics_features.allay_mailbox_gui.tooltip_empty": "Send mail through the world-renowned Allay-Express",
       "item.mythics_features.soul_berry": "Soul Berry",
-      "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
-      "advancements.bottled_up_evil.descr": "Bottle Up A Vex",
+      "item.mythics_features.lime_stamp": "Lime Stamp",
+      "item.mythics_features.red_stamp": "Red Stamp",
       "block.mythics_features.vegetated_soul_soil": "Vegetated Soul Soil",
-      "block.mythics_features.spiritwood_door": "Spiritwood Door",
       "advancements.welcome.title": "Welcome to Mythic\u0027s Features",
-      "block.mythics_features.spiritwood_button": "Spiritwood Button",
       "entity.mythics_features.snake": "Snake",
-      "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
       "block.mythics_features.spiritwood_pressure_plate": "Spiritwood Pressure Plate",
       "item.mythics_features.snake_spawn_egg": "Snake Spawn Egg",
       "block.mythics_features.spiritwood_planks": "Spiritwood Planks",
-      "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
       "advancements.what_is_inside_this_fruit.title": "What Is Inside This Fruit Again?",
       "block.mythics_features.spiritwood_log": "Spiritwood Log",
+      "block.mythics_features.end_sand": "End Sand",
       "item_group.mythics_features.mythics_features": "Mythic\u0027s Features",
       "block.mythics_features.stripped_spiritwood_wood": "Spiritwood Wood",
+      "item.mythics_features.vex_in_a_bottle": "Vex In A Bottle",
+      "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
+      "item.mythics_features.yellow_stamp": "Yellow Stamp",
+      "advancements.bottled_up_goodness.title": "Bottled Up Goodness",
+      "advancements.spirited_away.descr": "Enter A Spiritwood Forest",
+      "item.mythics_features.orange_stamp": "Orange Stamp",
+      "item.mythics_features.green_stamp": "Green Stamp",
+      "block.mythics_features.soul_berry_bush": "Soul Berry Bush",
+      "entity.mythics_features.possessed_pot": "Possessed Pot",
+      "block.mythics_features.spiritwood_slab": "Spiritwood Slab",
+      "advancements.bottled_up_evil.title": "Bottled Up Evil",
+      "block.mythics_features.spiritwood_trapdoor": "Spiritwood Trapdoor",
+      "advancements.bottled_up_evil.descr": "Bottle Up A Vex",
+      "gui.mythics_features.allay_mailbox_gui.button_send": "Send",
+      "block.mythics_features.spiritwood_door": "Spiritwood Door",
+      "block.mythics_features.spiritwood_button": "Spiritwood Button",
+      "block.mythics_features.allay_mailbox": "Allay Mailbox",
+      "block.mythics_features.spiritwood_wood": "Spiritwood Wood",
+      "gui.mythics_features.allay_mailbox_gui.label_allay_mailbox": "Allay Mailbox",
+      "item.mythics_features.possessed_pot_spawn_egg": "Possessed Pot Spawn Egg",
       "item.mythics_features.thundeer_spawn_egg": "Thundeer Spawn Egg",
       "block.mythics_features.spiritwood_stairs": "Spiritwood Stairs",
       "block.mythics_features.spiritwood_sapling": "Spiritwood Sapling",
       "advancements.welcome.descr": "uh a mod where i add stuff which i think moyang should add cus i have a smol brain",
-      "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
       "biome.mythics_features.spiritwood_forest": "Spiritwood Forest",
-      "item.mythics_features.vex_in_a_bottle": "Vex In A Bottle",
+      "item.mythics_features.allay_in_a_bottle": "Allay In A Bottle",
       "advancements.bottled_up_goodness.descr": "Bottle Up An Allay",
-      "block.mythics_features.spiritwood_fence": "Spiritwood Fence",
       "advancements.spirited_away.title": "Spirited Away",
-      "advancements.bottled_up_goodness.title": "Bottled Up Goodness",
       "entity.mythics_features.thundeer": "Thundeer",
       "block.mythics_features.spiritwood_leaves": "Spiritwood Leaves",
-      "advancements.spirited_away.descr": "Enter A Spiritwood Forest",
+      "gui.mythics_features.allay_mailbox_gui.tooltip_send_mail_through_the_world_reno": "Send mail through Allay Express",
       "advancements.what_is_inside_this_fruit.descr": "Obtain A Soul Berry",
       "block.mythics_features.stripped_spiritwood_log": "Spiritwood Log",
       "block.mythics_features.spiritwood_fence_gate": "Spiritwood Fence Gate",
       "entity.mythics_features.brine": "Brine",
-      "block.mythics_features.soul_berry_bush": "Soul Berry Bush",
       "item.mythics_features.brine_spawn_egg": "Brine Spawn Egg"
     }
   },
@@ -1282,7 +1679,12 @@
         "children": [
           {
             "name": "special blocks",
-            "children": []
+            "children": [
+              {
+                "name": "AllayMailbox",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1300,12 +1702,7 @@
       },
       {
         "name": "produces",
-        "children": [
-          {
-            "name": "Sanity concern-Unused",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Items",

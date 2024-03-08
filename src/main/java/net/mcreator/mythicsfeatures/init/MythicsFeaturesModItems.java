@@ -13,9 +13,15 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.mythicsfeatures.item.YellowStampItem;
 import net.mcreator.mythicsfeatures.item.VexInABottleItem;
 import net.mcreator.mythicsfeatures.item.SoulBerryItem;
+import net.mcreator.mythicsfeatures.item.RedStampItem;
+import net.mcreator.mythicsfeatures.item.OrangeStampItem;
+import net.mcreator.mythicsfeatures.item.LimeStampItem;
+import net.mcreator.mythicsfeatures.item.GreenStampItem;
 import net.mcreator.mythicsfeatures.item.AllayInABottleItem;
+import net.mcreator.mythicsfeatures.block.display.AllayMailboxDisplayItem;
 import net.mcreator.mythicsfeatures.MythicsFeaturesMod;
 
 public class MythicsFeaturesModItems {
@@ -40,6 +46,13 @@ public class MythicsFeaturesModItems {
 	public static final RegistryObject<Item> STRIPPED_SPIRITWOOD_WOOD = block(MythicsFeaturesModBlocks.STRIPPED_SPIRITWOOD_WOOD);
 	public static final RegistryObject<Item> SOUL_BERRY = REGISTRY.register("soul_berry", () -> new SoulBerryItem());
 	public static final RegistryObject<Item> SOUL_BERRY_BUSH = block(MythicsFeaturesModBlocks.SOUL_BERRY_BUSH);
+	public static final RegistryObject<Item> END_SAND = block(MythicsFeaturesModBlocks.END_SAND);
+	public static final RegistryObject<Item> ALLAY_MAILBOX = REGISTRY.register(MythicsFeaturesModBlocks.ALLAY_MAILBOX.getId().getPath(), () -> new AllayMailboxDisplayItem(MythicsFeaturesModBlocks.ALLAY_MAILBOX.get(), new Item.Properties()));
+	public static final RegistryObject<Item> RED_STAMP = REGISTRY.register("red_stamp", () -> new RedStampItem());
+	public static final RegistryObject<Item> ORANGE_STAMP = REGISTRY.register("orange_stamp", () -> new OrangeStampItem());
+	public static final RegistryObject<Item> YELLOW_STAMP = REGISTRY.register("yellow_stamp", () -> new YellowStampItem());
+	public static final RegistryObject<Item> LIME_STAMP = REGISTRY.register("lime_stamp", () -> new LimeStampItem());
+	public static final RegistryObject<Item> GREEN_STAMP = REGISTRY.register("green_stamp", () -> new GreenStampItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

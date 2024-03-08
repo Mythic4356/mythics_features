@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mythics_features:red_stamp",
+    "mythics_features:orange_stamp",
+    "mythics_features:yellow_stamp",
+    "mythics_features:lime_stamp",
+    "mythics_features:green_stamp"
+  ]
+}
